@@ -1,0 +1,176 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Top link */
+.top-link {
+  margin-bottom: 20px;
+}
+.top-link a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Main Content */
+.main {
+  flex: 2;
+  min-width: 300px;
+}
+
+.main h2 {
+  margin-bottom: 15px;
+}
+
+/* Item Box */
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-row img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 5px;
+}
+
+.item-details p {
+  font-size: 0.9rem;
+}
+
+.link {
+  color: #0077cc;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+/* Delivery Options */
+.delivery-options {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.delivery-options label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Summary Section */
+.summary {
+  flex: 1;
+  min-width: 260px;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  height: fit-content;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary h2 {
+  margin-bottom: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.order-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .item-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-row img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .summary {
+    width: 100%;
+  }
+}

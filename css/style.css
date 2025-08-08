@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:white; */
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4rem;
+    color: black;
+    border-bottom: rgba(128, 128, 128, 0.296) .1px solid;
+    
+}
+
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.nav-items{
+    font-size: 1.2rem;
+}
+.nav-links{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-links {
+  position: relative;
+  text-decoration: none;
+  color: #111; /* normal color */
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #ff6b35; /* accent color on hover */
+}
+
+/* underline effect */
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff6b35;
+  transition: width 0.3s ease;
+}
+
+.nav-links:hover::after {
+  width: 100%;
+}
+
+
+.icon{
+    background-color: rgba(128, 128, 128, 0.17);
+}
+
+
+.cart-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-icon svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #ff6b35; /* accent color on hover */
+  transform: scale(1.1);
+}
+
+.cart-icon:hover svg {
+  transform: rotate(-10deg) scale(1.15);
+  fill: #ff6b35;
+}
+
+.cart-icon sup {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-icon:hover sup {
+  background-color: #ff6b35;
+  transform: scale(1.2);
+  color: white;
+}
+
+.item-count{
+    font-size: 12px;
+}
+
+.bigbox{
+                background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Photo\ a\ guy\ of\ model.jpg');
+                height: 500px;
+                background-repeat: no-repeat ;
+                background-position: center;
+                 background-size: cover;
+                 width: 75%;
+                 margin: auto;
+                 border-radius: 15px;
+                 /* padding: 20px; */
+                 text-align: left;
+                 margin-top: 2rem;
+                 color: white;
+                 position: relative;
+                 margin-bottom: 2rem;
+}
+
+.text-box{
+    position: absolute;
+ bottom: 20%;
+ left: 30px;
+}
+h1{
+ font-size: 3rem;
+ margin-bottom: 6px;
+}
+
+.text-box p{
+    margin-bottom: 20px;
+}
+.text-box .btn{
+ background-color: hsl(240, 100%, 50%);
+ color: white;
+ border: none;
+ border-radius: 6px;
+ padding: 12px 16px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    width: 75%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 6px;
+}
+
+h3{
+    margin-left: 180px;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+h4{
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.card p{
+    color: grey;
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.add-to-cart {
+  background-color: #111; /* main color */
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+.add-to-cart:hover {
+  background-color: #ff6b35; 
+  transform: translateY(-2px) scale(1.05); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.add-to-cart:active {
+  transform: translateY(0) scale(0.98); 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+@media(max-width:786px){
+    .nav{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .grid-container{
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+    h3{
+    margin-left: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    }
+
+
+
+    .bigbox{
+                background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Photo\ a\ guy\ of\ model.jpg');
+                height: 500px;
+                background-repeat: no-repeat ;
+                background-position: center;
+                 background-size: cover;
+                 width: 75%;
+                 margin: auto;
+                 border-radius: 15px;
+                 /* padding: 20px; */
+                 text-align: left;
+                 margin-top: 2rem;
+                 color: white;
+                 position: relative;
+                 margin-bottom: 2rem;
+}
+
+.text-box{
+    position: absolute;
+ bottom: 20%;
+ left: 30px;
+}
+h1{
+ font-size: 2rem;
+ margin-bottom: 6px;
+}
+
+.text-box p{
+    margin-bottom: 15px;
+}
+.text-box .btn{
+ background-color: hsl(240, 100%, 50%);
+ color: white;
+ border: none;
+ border-radius: 6px;
+ padding: 8px 10px;
+}
+}
+
+@media(max-width:486px){
+   
+    .grid-container{
+        grid-template-columns:repeat(1, 1fr) ;
+    }
+    .brand-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-items{
+    font-size: 10px;
+}
+}
