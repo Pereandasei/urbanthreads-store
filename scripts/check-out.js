@@ -59,7 +59,10 @@ function renderOrderSummary(){
         link.addEventListener('click', () =>{
             let productId = link.dataset.productId;
             deleteItem(productId);
+            renderOrderSummary();
             paymentSummary();
+            saveToStorage();
+
         })
     })
 
@@ -168,6 +171,7 @@ function paymentSummary(){
 }
 paymentSummary();
 // console.log(paymentSummary());
+
 
 
 
