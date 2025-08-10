@@ -76,12 +76,12 @@ body {
   transition: transform 0.3s ease, fill 0.3s ease;
 }
 
-.cart-icon:hover {
+.cart-icon:active {
   color: #ff6b35; /* accent color on hover */
   transform: scale(1.1);
 }
 
-.cart-icon:hover svg {
+.cart-icon:active svg {
   transform: rotate(-10deg) scale(1.15);
   fill: #ff6b35;
 }
@@ -90,7 +90,7 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cart-icon:hover sup {
+.cart-icon:active sup {
   background-color: #ff6b35;
   transform: scale(1.2);
   color: white;
@@ -184,7 +184,7 @@ h4{
   transition: all 0.3s ease; 
 }
 
-.add-to-cart:hover {
+.add-to-cart:active {
   background-color: #ff6b35; 
   transform: translateY(-2px) scale(1.05); 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
@@ -266,4 +266,5 @@ h1{
 .nav-items{
     font-size: 10px;
 }
+
 }
